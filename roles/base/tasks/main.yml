@@ -1,0 +1,4 @@
+---
+- name: Install Homebrew bundle
+  become_user: "{{ user.name }}"
+  shell: brew bundle
