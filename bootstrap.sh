@@ -12,4 +12,4 @@ if ! hash ansible-playbook; then
   brew install ansible
 fi
 
-sudo ansible-playbook -i localhost playbook.yml
+sudo ansible-playbook -i hosts playbook.yml

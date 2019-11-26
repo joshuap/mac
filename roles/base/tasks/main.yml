@@ -2,3 +2,5 @@
 - name: Install Homebrew bundle
   become_user: "{{ user.name }}"
   shell: brew bundle
+  environment:
+    HOMEBREW_CASK_OPTS: "--appdir=~/Applications"

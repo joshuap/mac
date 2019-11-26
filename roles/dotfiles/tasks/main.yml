@@ -1,0 +1,30 @@
+---
+- name: Create ~/Code/joshuap directory
+  file:
+    path: "/Users/{{ user.name }}/Code/joshuap"
+    state: directory
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Check out dotfiles repo
+  git:
+    repo: "https://github.com/joshuap/dotfiles.git"
+    dest: "/Users/{{ user.name }}/Code/joshuap/dotfiles"
+    update: no
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Link ~/.dotfiles
+  file:
+    src: "/Users/{{ user.name }}/Code/joshuap/dotfiles"
+    dest: "/Users/{{ user.name }}/.dotfiles"
+    state: link
+  become: yes
+  become_user: "{{ user.name }}"
+
+- name: Install dotfiles
+  command: "rcup -d /Users/{{ user.name }}/.dotfiles"
+  environment:
+    RCRC: "/Users/{{ user.name }}/.dotfiles/rcrc"
+  become: yes
+  become_user: "{{ user.name }}"

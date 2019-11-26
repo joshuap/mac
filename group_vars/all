@@ -6,24 +6,12 @@ asdf_plugins:
   - name: ruby
     repo: https://github.com/asdf-vm/asdf-ruby.git
     versions:
-      - 2.6.3
+      - 2.6.5
   - name: nodejs
     repo: https://github.com/asdf-vm/asdf-nodejs.git
     versions:
-      - 10.15.3
-  - name: erlang
-    repo: https://github.com/asdf-vm/asdf-erlang.git
-    versions:
-      - 21.3
-  - name: elixir
-    repo: https://github.com/asdf-vm/asdf-elixir.git
-    versions:
-      - 1.8-otp-21
+      - 12.13.1
   - name: golang
     repo: https://github.com/kennyp/asdf-golang.git
     versions:
-      - 1.12.1
-  - name: elm
-    repo: https://github.com/vic/asdf-elm.git
-    versions:
-      - 0.19.0
+      - 1.13.4

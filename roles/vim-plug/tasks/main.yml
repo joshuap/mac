@@ -1,0 +1,7 @@
+---
+- name: Install vim-plug
+  command: >
+    curl -fLo /Users/{{ user.name }}/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  become: yes
+  become_user: "{{ user.name }}"
