@@ -23,7 +23,6 @@ brew "jq"
 brew "htop"
 brew "neofetch"
 brew "mutt"
-brew "autoconf"
 
 # Ansible
 brew "ansible"
@@ -43,6 +42,7 @@ brew "hub"
 
 # Dev dependencies and package managers
 brew "libyaml" # should come after openssl
+brew "autoconf"
 brew "coreutils"
 brew "yarn"
 brew "ruby"
