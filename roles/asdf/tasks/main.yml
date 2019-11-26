@@ -1,0 +1,29 @@
+---
+- name: Install asdf version manager
+  become_user: "{{ user.name }}"
+  git:
+    repo: "https://github.com/asdf-vm/asdf.git"
+    version: "v0.7.0"
+    dest: "/Users/{{ user.name }}/.asdf"
+    update: no
+  tags:
+    - asdf
+
+- name: Install asdf plugins
+  become_user: "{{ user.name }}"
+  command: "asdf plugin-add {{ item.name }} {{ item.repo }}"
+  with_items: "{{ asdf_plugins }}"
+  when: asdf_plugins|length > 0
+  ignore_errors: true
+  tags:
+    - asdf
+
+- name: install asdf versions
+  become_user: "{{ user.name }}"
+  command: "asdf install {{ item.0.name }} {{ item.1 }}"
+  with_subelements:
+    - "{{ asdf_plugins }}"
+    - versions
+    - flags:
+      skip_missing: true
+  when: asdf_plugins|length > 0
