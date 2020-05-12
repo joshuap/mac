@@ -12,3 +12,7 @@
 
 - Alfred workflow to toggle DND (I currently have a keyboard shortcut, so it
     could just toggle that)
+
+## Todo
+
+- `/usr/local/opt/fzf/install`
