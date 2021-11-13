@@ -67,7 +67,6 @@ brew "redis", restart_service: :changed
 
 # Docker development
 cask "docker"
-cask "kitematic"
 
 # Security
 cask "little-snitch", args: { appdir: '/Applications' }
