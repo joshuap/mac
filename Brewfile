@@ -101,7 +101,7 @@ cask "twist"
 cask "notion"
 cask "iterm2"
 cask "keepassxc"
-cask "teensy"
+cask "teensy" # for ErgoDox
 cask "google-chrome"
 cask "imageoptim"
 cask "handbrake"
