@@ -84,7 +84,7 @@ cask "font-lato"
 # Productivity
 cask "steermouse"
 cask "alfred"
-cask "dozer"
+cask "bartender"
 cask "karabiner-elements"
 cask "dash"
 cask "istat-menus", args: { appdir: '/Applications' }
