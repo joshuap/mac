@@ -20,4 +20,4 @@ Related:
 
 ## Todo
 
-- `/usr/local/opt/fzf/install`
+- `/opt/homebrew/opt/fzf/install`
