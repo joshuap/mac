@@ -2,6 +2,11 @@
 
 > My Mac laptop, provisioned with [Ansible](https://github.com/ansible/ansible)
 
+Related:
+
+- [my dotfiles](https://github.com/joshuap/dotfiles)
+- [my macOS config](https://github.com/joshuap/mathias-dotfiles/blob/mine/.macos)
+
 ## Instructions
 
 ```sh
