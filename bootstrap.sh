@@ -4,7 +4,10 @@ set -e
 
 if ! hash brew; then
   echo "Installing Homebrew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+  echo "Loading initial Homebrew env"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 if ! hash ansible-playbook; then

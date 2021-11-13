@@ -3,7 +3,7 @@
   become_user: "{{ user.name }}"
   git:
     repo: "https://github.com/asdf-vm/asdf.git"
-    version: "v0.7.5"
+    version: "v0.8.1"
     dest: "/Users/{{ user.name }}/.asdf"
     update: no
   tags:

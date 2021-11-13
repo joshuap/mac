@@ -55,14 +55,14 @@ cask "sauce-connect"
 # cask "java" unless system "/usr/libexec/java_home --failfast"
 
  # For compiling PHP
-brew "byson"
+brew "bison"
 brew "re2c"
 brew "gd"
 brew "libiconv"
 brew "libpq"
 
 # Databases
-cask "postgres", args: { appdir: '/Applications' }
+cask "postgres-unofficial", args: { appdir: '/Applications' }
 brew "redis", restart_service: :changed
 
 # Docker development
@@ -95,7 +95,7 @@ cask "arq", args: { appdir: '/Applications' }
 cask "dropbox"
 cask "transmission"
 cask "transmit"
-cask "zoomus"
+cask "zoom"
 cask "twist"
 cask "notion"
 cask "iterm2"
@@ -117,7 +117,7 @@ cask "github"
 cask "carbon-copy-cloner"
 cask "obsidian"
 cask "front"
-cask "remarkable"
+# cask "remarkable"
 
 # Install manually until DeDRM_tools support Calibre 5.x:
 # https://github.com/apprenticeharper/DeDRM_tools/releases
