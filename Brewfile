@@ -40,6 +40,7 @@ brew "hub"
 
 # Image manipulation
 # brew "imagemagick"
+# brew "gifski"
 
 # Dev dependencies and package managers
 brew "libyaml" # should come after openssl
@@ -49,13 +50,18 @@ brew "yarn"
 brew "ruby"
 brew "node"
 brew "python"
-brew "python2"
 brew "direnv"
 cask "sauce-connect"
-cask "java" unless system "/usr/libexec/java_home --failfast"
+# cask "java" unless system "/usr/libexec/java_home --failfast"
+
+ # For compiling PHP
+brew "byson"
+brew "re2c"
+brew "gd"
+brew "libiconv"
+brew "libpq"
 
 # Databases
-# brew "postgres", restart_service: :changed
 cask "postgres", args: { appdir: '/Applications' }
 brew "redis", restart_service: :changed
 
@@ -68,16 +74,17 @@ cask "little-snitch", args: { appdir: '/Applications' }
 cask "gpg-suite"
 cask "keybase"
 cask "viscosity"
+brew "ykman"
 
 # macOS
 cask "qlmarkdown"
 cask "font-hack"
+cask "font-lato"
 
 # Productivity
 cask "steermouse"
-# cask "hazeover"
 cask "alfred"
-cask "bartender"
+cask "dozer"
 cask "karabiner-elements"
 cask "dash"
 cask "istat-menus", args: { appdir: '/Applications' }
@@ -90,27 +97,42 @@ cask "dropbox"
 cask "transmission"
 cask "transmit"
 cask "zoomus"
-cask "swinsian"
-cask "basecamp"
+cask "twist"
 cask "notion"
 cask "iterm2"
-# cask "kitty"
 cask "keepassxc"
 cask "teensy"
 cask "google-chrome"
 cask "imageoptim"
 cask "handbrake"
-cask "bettertouchtool"
 cask "appcleaner"
 cask "daisydisk"
 cask "signal"
 cask "kindle"
-# cask "code"
 cask "grammarly"
-cask "fluid"
 cask "tableplus"
 cask "netnewswire"
-cask "calibre"
 cask "slack"
+cask "cold-turkey-blocker", args: { appdir: '/Applications' }
+cask "github"
+cask "carbon-copy-cloner"
+cask "obsidian"
+cask "front"
+cask "remarkable"
+
+# Install manually until DeDRM_tools support Calibre 5.x:
+# https://github.com/apprenticeharper/DeDRM_tools/releases
+# cask "calibre"
+
+# cask "virtualbox", args: { appdir: '/Applications' }
+# cask "code"
 # cask "rocket"
-cask "evernote"
+# cask "evernote"
+# cask "vivaldi", args: { appdir: '/Applications' }
+# cask "kitty"
+# cask "swinsian"
+# cask "fluid"
+# cask "hazeover"
+# cask "bettertouchtool"
+# cask "lastfm"
+# cask "steam"
