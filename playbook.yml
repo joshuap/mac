@@ -2,9 +2,7 @@
 - hosts: localhost
   become: yes
   roles:
-    - { role: base, tags: ['base'] }
-    - { role: dotfiles, tags: ['dotfiles'] }
-    - { role: vim-plug, tags: ['vim-plug'] }
-    - { role: base16, tags: ['base16'] }
-    - { role: macos, tags: ['macos'] }
-    - { role: asdf, tags: ['asdf'] }
+    - { role: base, tags: ["base"] }
+    - { role: dotfiles, tags: ["dotfiles"] }
+    - { role: base16, tags: ["base16"] }
+    - { role: asdf, tags: ["asdf"] }
