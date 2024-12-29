@@ -5,7 +5,6 @@
 Related:
 
 - [my dotfiles](https://github.com/joshuap/dotfiles)
-- [my macOS config](https://github.com/joshuap/mathias-dotfiles/blob/mine/.macos)
 
 ## Instructions
 
