@@ -1,137 +1,81 @@
-tap "thoughtbot/formulae"
-tap "homebrew/services"
-tap "universal-ctags/universal-ctags"
-tap "heroku/brew"
-tap "homebrew/cask-fonts"
-tap "neovim/neovim"
+# Homebrew dependencies
+brew "mas"
 
-# Unix
-brew "universal-ctags", args: ["HEAD"]
+# Dev dependencies
+brew "autoconf"
+brew "coreutils"
+brew "openssl"
+brew "libyaml" # must come after openssl
+
+# System dependencies
+brew "node"
+brew "python"
+brew "ruby"
+
+# Unix environment
+brew "ansible"
+brew "direnv"
+brew "fzf"
 brew "git"
 brew "git-extras"
-brew "openssl"
+brew "htop"
+brew "hub"
+brew "jq"
+brew "mutt"
+brew "neofetch"
+brew "neovim"
+brew "pinentry-mac"
 brew "rcm"
 brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
-brew "vim"
-brew "neovim"
+brew "universal-ctags"
 brew "watchman"
-brew "zsh"
-brew "fzf"
-brew "jq"
-brew "htop"
-brew "neofetch"
-brew "mutt"
 brew "wget"
+brew "ykman" # for YubiKey
+brew "zsh"
 
-# Ansible
-brew "ansible"
-
-# Heroku
-brew "heroku/brew/heroku"
-brew "parity"
-
-# AWS
-brew "awscli"
-
-# GitHub
-brew "hub"
-
-# Image manipulation
-# brew "imagemagick"
-# brew "gifski"
-
-# Dev dependencies and package managers
-brew "libyaml" # should come after openssl
-brew "autoconf"
-brew "coreutils"
-brew "yarn"
-brew "ruby"
-brew "node"
-brew "python"
-brew "direnv"
-cask "sauce-connect"
-# cask "java" unless system "/usr/libexec/java_home --failfast"
-
- # For compiling PHP
-brew "bison"
-brew "re2c"
-brew "gd"
-brew "libiconv"
-brew "libpq"
-
-# Databases
-cask "postgres-unofficial", args: { appdir: '/Applications' }
-brew "redis", restart_service: :changed
-
-# Docker development
-cask "docker"
+# Fonts
+cask "font-hack-nerd-font"
 
 # Security
-cask "little-snitch", args: { appdir: '/Applications' }
 cask "gpg-suite"
 cask "keybase"
+cask "little-snitch", args: { appdir: '/Applications' }
 cask "viscosity"
-brew "ykman"
 
-# macOS
+# Utilities
 cask "qlmarkdown"
-cask "font-hack"
-cask "font-lato"
-
-# Productivity
 cask "steermouse"
 cask "alfred"
-cask "bartender"
 cask "karabiner-elements"
-cask "dash"
 cask "istat-menus", args: { appdir: '/Applications' }
-
-# Backup
-cask "arq", args: { appdir: '/Applications' }
-
-# Apps
-cask "dropbox"
-cask "transmission"
-cask "transmit"
-cask "zoom"
-cask "twist"
-cask "notion"
 cask "iterm2"
-cask "keepassxc"
 cask "teensy" # for ErgoDox
-cask "google-chrome"
-cask "imageoptim"
-cask "handbrake"
+
+# General
 cask "appcleaner"
+cask "arq", args: { appdir: '/Applications' }
+cask "claude"
+cask "dash"
 cask "daisydisk"
-cask "signal"
-cask "kindle"
-cask "grammarly"
-cask "tableplus"
-cask "netnewswire"
-cask "slack"
-cask "cold-turkey-blocker", args: { appdir: '/Applications' }
-cask "github"
-cask "carbon-copy-cloner"
+cask "discord"
 cask "obsidian"
-cask "front"
-# cask "remarkable"
+cask "slack"
+cask "transmission"
 
-# Install manually until DeDRM_tools support Calibre 5.x:
-# https://github.com/apprenticeharper/DeDRM_tools/releases
-# cask "calibre"
+# Mac app store
+mas "iA Writer", id: 775737590
+mas "Magnet", id: 441258766
+mas "Perplexity", id: 6714467650
 
-# cask "virtualbox", args: { appdir: '/Applications' }
-# cask "code"
-# cask "rocket"
-# cask "evernote"
-# cask "vivaldi", args: { appdir: '/Applications' }
-# cask "kitty"
-# cask "swinsian"
+##
+# Apps I've used in the past:
+
+# cask "carbon-copy-cloner"
+# cask "cold-turkey-blocker", args: { appdir: '/Applications' }
 # cask "fluid"
 # cask "hazeover"
-# cask "bettertouchtool"
-# cask "lastfm"
-# cask "steam"
+# cask "rocket"
+# cask "vivaldi", args: { appdir: '/Applications' }
+# cask "virtualbox", args: { appdir: '/Applications' }
