@@ -6,16 +6,8 @@ asdf_plugins:
   - name: ruby
     repo: https://github.com/asdf-vm/asdf-ruby.git
     versions:
-      - 3.0.2
+      - latest
   - name: nodejs
     repo: https://github.com/asdf-vm/asdf-nodejs.git
     versions:
-      - 16.13.0
-  - name: golang
-    repo: https://github.com/kennyp/asdf-golang.git
-    versions:
-      - 1.17.3
-  - name: python
-    repo: https://github.com/danhper/asdf-python.git
-    versions:
-      - 3.9.8
+      - latest

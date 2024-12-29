@@ -9,23 +9,32 @@
   tags:
     - asdf
 
-- name: Install asdf plugins
+- name: Check installed plugins
+  shell: |
+    source ~/.asdf/asdf.sh
+    asdf plugin-list
+  register: plugin_list
+
+- name: Install missing asdf plugins
   become_user: "{{ user.name }}"
-  command: "asdf plugin-add {{ item.name }} {{ item.repo }}"
+  shell: |
+    source ~/.asdf/asdf.sh
+    asdf plugin-add {{ item.name }} {{ item.repo }}
   with_items: "{{ asdf_plugins }}"
-  when: asdf_plugins|length > 0
-  ignore_errors: true
+  when: item.name not in plugin_list.stdout.split()
   tags:
     - asdf
 
 - name: install asdf versions
   become_user: "{{ user.name }}"
-  command: "asdf install {{ item.0.name }} {{ item.1 }}"
+  shell: |
+    source ~/.asdf/asdf.sh
+    asdf install {{ item.0.name }} {{ item.1 }}
+    asdf global {{ item.0.name }} {{ item.1 }}
   with_subelements:
     - "{{ asdf_plugins }}"
     - versions
     - flags:
       skip_missing: true
-  when: asdf_plugins|length > 0
   tags:
     - asdf
