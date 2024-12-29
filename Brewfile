@@ -68,6 +68,7 @@ cask "transmission"
 mas "iA Writer", id: 775737590
 mas "Magnet", id: 441258766
 mas "Perplexity", id: 6714467650
+mas "Xcode", id: 497799835
 
 ##
 # Apps I've used in the past:
