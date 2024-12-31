@@ -1,4 +1,5 @@
-file ./Brewfie
+# https://homebrew-file.readthedocs.io/en/latest/
+# file ./Brewfie
 
 tap "thoughtbot/formulae"
 tap "heroku/brew"
@@ -20,10 +21,6 @@ brew "re2c"
 brew "gd"
 brew "libiconv"
 brew "libpq"
-
-# Image manipulation
-# brew "imagemagick"
-# brew "gifski"
 
 # Databases
 cask "postgres-unofficial", args: { appdir: '/Applications' }

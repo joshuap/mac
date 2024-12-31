@@ -6,15 +6,22 @@ brew "autoconf"
 brew "coreutils"
 brew "openssl"
 brew "libyaml" # must come after openssl
+brew "pkg-config"
 
 # System dependencies
 brew "node"
 brew "python"
 brew "ruby"
 
+# Image manipulation
+brew "imagemagick"
+# brew "pngquant"
+# brew "gifski"
+
 # Unix environment
 brew "ansible"
 brew "direnv"
+brew "fd"
 brew "fzf"
 brew "git"
 brew "git-extras"
@@ -63,11 +70,14 @@ cask "discord"
 cask "obsidian"
 cask "slack"
 cask "transmission"
+cask "superwhisper"
+cask "adobe-creative-cloud"
 
 # Mac app store
 mas "iA Writer", id: 775737590
 mas "Magnet", id: 441258766
 mas "Perplexity", id: 6714467650
+mas "Vimlike", id: 1584519802
 mas "Xcode", id: 497799835
 
 ##
