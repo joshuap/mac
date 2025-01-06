@@ -41,6 +41,7 @@ brew "watchman"
 brew "wget"
 brew "ykman" # for YubiKey
 brew "zsh"
+brew "ripgrep"
 
 # Fonts
 cask "font-hack-nerd-font"
@@ -64,6 +65,7 @@ cask "teensy" # for ErgoDox
 cask "appcleaner"
 cask "arq", args: { appdir: '/Applications' }
 cask "claude"
+cask "cleanshot"
 cask "dash"
 cask "daisydisk"
 cask "discord"

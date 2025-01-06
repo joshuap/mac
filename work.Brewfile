@@ -10,6 +10,7 @@ brew "parity"
 
 # AWS
 brew "awscli"
+cask "aws-vault"
 
 # Dev dependencies
 # brew "yarn"
@@ -37,6 +38,7 @@ cask "notion"
 cask "google-chrome"
 cask "imageoptim"
 cask "grammarly"
+cask "screen-studio"
 cask "tableplus"
 cask "github"
 cask "front"
