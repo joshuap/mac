@@ -45,6 +45,7 @@ brew "zsh"
 brew "ripgrep"
 brew "difftastic"
 brew "ghostty"
+brew "zellij"
 
 # Fonts
 cask "font-hack-nerd-font"
@@ -57,7 +58,7 @@ cask "viscosity"
 
 # Utilities
 cask "qlmarkdown"
-cask "steermouse"
+cask "steermouse", args: { appdir: '/Applications' }
 cask "alfred"
 cask "karabiner-elements"
 cask "istat-menus", args: { appdir: '/Applications' }
@@ -78,6 +79,7 @@ cask "transmission"
 cask "superwhisper"
 cask "adobe-creative-cloud"
 cask "granola"
+cask "cursor"
 
 # Mac app store
 mas "iA Writer", id: 775737590
@@ -85,6 +87,7 @@ mas "Magnet", id: 441258766
 mas "Perplexity", id: 6714467650
 mas "Vimlike", id: 1584519802
 mas "Xcode", id: 497799835
+mas "Kagi for Safari", id: 1622835804
 
 ##
 # Apps I've used in the past:
