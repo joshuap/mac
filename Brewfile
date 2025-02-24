@@ -42,6 +42,7 @@ brew "wget"
 brew "ykman" # for YubiKey
 brew "zsh"
 brew "ripgrep"
+brew "difftastic"
 
 # Fonts
 cask "font-hack-nerd-font"
