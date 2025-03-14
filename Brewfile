@@ -27,6 +27,7 @@ brew "git"
 brew "git-extras"
 brew "htop"
 brew "hub"
+brew "gh"
 brew "jq"
 brew "mutt"
 brew "neofetch"
@@ -43,6 +44,7 @@ brew "ykman" # for YubiKey
 brew "zsh"
 brew "ripgrep"
 brew "difftastic"
+brew "ghostty"
 
 # Fonts
 cask "font-hack-nerd-font"
@@ -75,6 +77,7 @@ cask "slack"
 cask "transmission"
 cask "superwhisper"
 cask "adobe-creative-cloud"
+cask "granola"
 
 # Mac app store
 mas "iA Writer", id: 775737590
