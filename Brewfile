@@ -55,6 +55,7 @@ cask "gpg-suite"
 cask "keybase"
 cask "little-snitch", args: { appdir: '/Applications' }
 cask "viscosity"
+brew "1password-cli"
 
 # Utilities
 cask "qlmarkdown"
