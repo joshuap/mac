@@ -44,7 +44,7 @@ brew "ykman" # for YubiKey
 brew "zsh"
 brew "ripgrep"
 brew "difftastic"
-brew "ghostty"
+cask "ghostty"
 brew "zellij"
 
 # Fonts
@@ -55,7 +55,7 @@ cask "gpg-suite"
 cask "keybase"
 cask "little-snitch", args: { appdir: '/Applications' }
 cask "viscosity"
-brew "1password-cli"
+cask "1password-cli"
 
 # Utilities
 cask "qlmarkdown"
@@ -89,6 +89,7 @@ mas "Perplexity", id: 6714467650
 mas "Vimlike", id: 1584519802
 mas "Xcode", id: 497799835
 mas "Kagi for Safari", id: 1622835804
+mas "Speedtest by Ookla", id: 1153157709
 
 ##
 # Apps I've used in the past:
