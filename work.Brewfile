@@ -29,18 +29,19 @@ brew "redis", restart_service: :changed
 
 # Docker development
 cask "docker"
+cask "orbstack", args: { appdir: '/Applications' }
+cask "session-manager-plugin"
 
 # Apps
 cask "dropbox"
+cask "google-drive"
 cask "zoom"
 cask "twist"
 cask "notion"
-cask "google-chrome"
-cask "imageoptim"
-cask "grammarly"
-cask "screen-studio"
-cask "tableplus"
-cask "github"
 cask "front"
+cask "dymo-connect"
+cask "upscayl"
+cask "figma"
 
+# cask "grammarly-desktop"
 # cask "sauce-connect"

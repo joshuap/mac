@@ -4,7 +4,7 @@
 cask "transmit"
 cask "keepassxc"
 cask "signal"
-cask "netnewswire"
+cask "transmission"
 
 mas "Day One", id: 1055511498
 

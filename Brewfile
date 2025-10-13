@@ -48,6 +48,7 @@ cask "ghostty"
 brew "zellij"
 brew "uv"
 brew "asdf"
+brew "watch"
 
 # Fonts
 cask "font-hack-nerd-font"
@@ -67,24 +68,33 @@ cask "karabiner-elements"
 cask "istat-menus", args: { appdir: '/Applications' }
 cask "iterm2"
 cask "teensy" # for ErgoDox
+cask "arq", args: { appdir: '/Applications' }
+cask "cleanshot"
 
 # General
+cask "adobe-creative-cloud"
 cask "appcleaner"
-cask "arq", args: { appdir: '/Applications' }
 cask "claude"
-cask "cleanshot"
 cask "dash"
 cask "daisydisk"
 cask "discord"
-cask "logseq"
+cask "github"
+cask "google-chrome", args: { appdir: '/Applications' }
+cask "chromium", args: { "no-quarantine": true }
+cask "firefox@developer-edition"
 cask "obsidian"
+cask "imageoptim"
+cask "logseq"
+cask "netnewswire"
 cask "slack"
-cask "transmission"
+cask "screen-studio"
+cask "tableplus"
+cask "transmit"
 cask "superwhisper"
-cask "adobe-creative-cloud"
 cask "granola"
 cask "cursor"
 cask "orbstack"
+cask "zed"
 cask "zen"
 
 # Mac app store
@@ -97,6 +107,10 @@ mas "Kagi for Safari", id: 1622835804
 mas "Speedtest by Ookla", id: 1153157709
 mas "Ivory for Mastodon by Tapbot", id: 6444602274
 mas "Drafts", id: 1435957248
+mas "GoodLinks", id: 1474335294
+
+# mas "Affinity Photo 2: Image Editor", id: 1616822987
+# mas "Affinity Designer 2", id: 1616831348
 
 ##
 # Apps I've used in the past:
@@ -105,6 +119,6 @@ mas "Drafts", id: 1435957248
 # cask "cold-turkey-blocker", args: { appdir: '/Applications' }
 # cask "fluid"
 # cask "hazeover"
-# cask "rocket"
+cask "rocket"
 # cask "vivaldi", args: { appdir: '/Applications' }
 # cask "virtualbox", args: { appdir: '/Applications' }
