@@ -5,6 +5,9 @@ cask "transmit"
 cask "keepassxc"
 cask "signal"
 cask "netnewswire"
+
+mas "Day One", id: 1055511498
+
 # cask "marsedit" # SHA256 mismatch
 
 # Install manually until DeDRM_tools support Calibre 5.x:

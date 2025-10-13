@@ -46,6 +46,8 @@ brew "ripgrep"
 brew "difftastic"
 cask "ghostty"
 brew "zellij"
+brew "uv"
+brew "asdf"
 
 # Fonts
 cask "font-hack-nerd-font"
@@ -74,6 +76,7 @@ cask "cleanshot"
 cask "dash"
 cask "daisydisk"
 cask "discord"
+cask "logseq"
 cask "obsidian"
 cask "slack"
 cask "transmission"
@@ -81,6 +84,8 @@ cask "superwhisper"
 cask "adobe-creative-cloud"
 cask "granola"
 cask "cursor"
+cask "orbstack"
+cask "zen"
 
 # Mac app store
 mas "iA Writer", id: 775737590
@@ -91,6 +96,7 @@ mas "Xcode", id: 497799835
 mas "Kagi for Safari", id: 1622835804
 mas "Speedtest by Ookla", id: 1153157709
 mas "Ivory for Mastodon by Tapbot", id: 6444602274
+mas "Drafts", id: 1435957248
 
 ##
 # Apps I've used in the past:
