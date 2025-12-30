@@ -10,10 +10,10 @@ brew "parity"
 
 # AWS
 brew "awscli"
-cask "aws-vault"
+cask "aws-vault-binary"
 
 # Dev dependencies
-cask "java"
+brew "java"
 
 # For compiling PHP
 brew "bison"
@@ -28,7 +28,7 @@ cask "postgres-unofficial", args: { appdir: '/Applications' }
 brew "redis", restart_service: :changed
 
 # Docker development
-cask "docker"
+cask "docker-desktop"
 cask "orbstack", args: { appdir: '/Applications' }
 cask "session-manager-plugin"
 
