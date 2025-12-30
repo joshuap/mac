@@ -47,7 +47,8 @@ brew "difftastic"
 cask "ghostty"
 brew "zellij"
 brew "uv"
-brew "asdf"
+brew "rv"
+brew "mise"
 brew "watch"
 
 # Fonts

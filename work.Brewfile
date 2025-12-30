@@ -22,6 +22,7 @@ brew "re2c"
 brew "gd"
 brew "libiconv"
 brew "libpq"
+brew "icu4c"
 
 # Databases
 cask "postgres-unofficial", args: { appdir: '/Applications' }
