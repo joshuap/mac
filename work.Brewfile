@@ -13,8 +13,7 @@ brew "awscli"
 cask "aws-vault"
 
 # Dev dependencies
-# brew "yarn"
-# cask "java" unless system "/usr/libexec/java_home --failfast"
+cask "java"
 
 # For compiling PHP
 brew "bison"
@@ -44,5 +43,3 @@ cask "dymo-connect"
 cask "upscayl"
 cask "figma"
 
-# cask "grammarly-desktop"
-# cask "sauce-connect"
