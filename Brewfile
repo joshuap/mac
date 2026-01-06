@@ -56,6 +56,8 @@ brew "claude-code"
 brew "opencode"
 brew "ollama"
 
+brew "honeybadger-io/tap/honeybadger"
+
 # Fonts
 cask "font-hack-nerd-font"
 
