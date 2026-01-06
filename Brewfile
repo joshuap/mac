@@ -51,6 +51,11 @@ brew "rv"
 brew "mise"
 brew "watch"
 
+# Dev tools
+brew "claude-code"
+brew "opencode"
+brew "ollama"
+
 # Fonts
 cask "font-hack-nerd-font"
 
